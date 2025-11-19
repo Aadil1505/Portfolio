@@ -32,13 +32,13 @@ export default function FooterSection() {
     return (
         <footer className="border-t py-12">
             <div className="mx-auto max-w-5xl px-6">
-                <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-                    {/* Ticker on the left */}
-                    <div className="order-2 md:order-1">
+                <div className="flex flex-col gap-8 items-center md:flex-row md:items-center md:justify-between">
+                    {/* Ticker - centered on mobile, left on desktop */}
+                    <div className="order-2 md:order-1 flex justify-center md:justify-start">
                         <TickerDisplay />
                     </div>
 
-                    {/* Navigation links on the right */}
+                    {/* Navigation links - centered on mobile, right on desktop */}
                     <div className="order-1 flex flex-wrap justify-center gap-6 text-sm md:order-2 md:justify-end">
                         {links.map((link, index) => (
                             <Link
