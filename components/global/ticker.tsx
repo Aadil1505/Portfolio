@@ -5,8 +5,6 @@ import {
     TickerPriceChange,
     TickerSymbol,
 } from "@/components/kibo-ui/ticker";
-import { AArrowUp } from "lucide-react";
-// import { useState } from "react";
 
 interface TickerData {
     symbol: string;
