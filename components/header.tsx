@@ -6,11 +6,12 @@ import React from 'react'
 import { AnimatedThemeToggler } from './ui/animated-theme-toggler'
 
 const menuItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contributions', href: '#contributions' },
+    { name: 'Home', href: '/#hero' },
+    { name: 'About', href: '/#about' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Contributions', href: '/#contributions' },
+    { name: 'Contact', href: '/#contact' },
 ]
 
 export const HeroHeader = () => {
@@ -37,6 +38,7 @@ export const HeroHeader = () => {
                                 aria-label="home"
                                 className="flex items-center space-x-2">
                                 <AArrowUp className='size-10'/>
+                                {/* <img src={"https://avatars.githubusercontent.com/u/74999480?v=4"} className='size-10 rounded-full'/> */}
                             </Link>
 
                             <button

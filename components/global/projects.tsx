@@ -9,7 +9,7 @@ const projectsData = [
     {
         id: 1,
         title: "Authlink",
-        description: "Blockchain & NFC based product authentication system.",
+        description: "Blockchain & NFC based product authentication system for luxury goods.",
         icon: "https://i.imgur.com/JSYiIWq.png",
         link: "/projects/authlink"
     },
@@ -23,7 +23,7 @@ const projectsData = [
     {
         id: 3,
         title: "CS Technician",
-        description: "Working as a CS Technician building and developing systems infrastructure.",
+        description: "Building, developing, & securing department & systems infrastructure.",
         icon: "https://cs.hofstra.edu/docs/images/shield_lockup_cs.png",
         link: "https://github.com/meschacirung/cnblocks"
     },
@@ -54,7 +54,21 @@ const projectsData = [
         description: "Custom website for restaurant marketing and advertisement.",
         icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGFlUMG5XOcSTSpUz5lcdmbZUvWjOAqnsWw&s",
         link: "https://github.com/meschacirung/cnblocks"
-    }
+    },
+    {
+        id: 8,
+        title: "Amazon CTF",
+        description: "Custom website for restaurant marketing and advertisement.",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2048px-Amazon_icon.svg.png",
+        link: "https://github.com/meschacirung/cnblocks"
+    },
+    {
+        id: 9,
+        title: "Pensar Hackathon",
+        description: "Custom website for restaurant marketing and advertisement.",
+        icon: "https://avatars.githubusercontent.com/u/136131689?s=200&v=4",
+        link: "https://github.com/meschacirung/cnblocks"
+    },
 ]
 
 export default function Projects() {
@@ -63,12 +77,12 @@ export default function Projects() {
             <div className="py-32">
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="text-center flex-col items-center justify-center">
-                        <h2 className="text-3xl font-semibold md:text-4xl">Some of My</h2>
+                        <h2 className="text-3xl font-semibold md:text-4xl">Some of My Latest</h2>
                         <WordRotate
                             className="text-3xl font-semibold md:text-4xl"
                             words={["Work", "Projects", "Side Quests"]}
                         />
-                        <p className="text-muted-foreground mt-6">Some of the stuff I spend my free time on and get paid to do.</p>
+                        <p className="text-muted-foreground mt-6">Just a portion the stuff I spend my free time on and get paid to do.</p>
                     </div>
 
                     <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

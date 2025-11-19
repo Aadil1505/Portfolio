@@ -5,6 +5,8 @@ import {
   ContributionGraphBlock,
   ContributionGraphCalendar,
   ContributionGraphFooter,
+  ContributionGraphLegend,
+  ContributionGraphTotalCount,
 } from "@/components/kibo-ui/contribution-graph";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
@@ -112,7 +114,9 @@ const ContributionGraphWrapper = ({ data }: { data: ContributionDay[] }) => {
             />
           )}
         </ContributionGraphCalendar>
-        <ContributionGraphFooter />
+        <ContributionGraphFooter>
+          <ContributionGraphLegend />
+        </ContributionGraphFooter>
       </ContributionGraph>
     </div>
   );

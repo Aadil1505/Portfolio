@@ -27,13 +27,14 @@ export default function TickerDisplay() {
     return (
         <Ticker>
             <TickerIcon asChild>
-                {/* <img
-          alt={data.symbol}
-          height={26}
-          src={`https://img.logo.dev/ticker/${data.symbol}?token=${process.env.NEXT_PUBLIC_LOGO_DEV_TOKEN}&size=26&retina=true`}
-          width={26}
-        /> */}
-                <AArrowUp />
+                <a href="https://github.com/Aadil1505" target="_blank" rel="noopener noreferrer">
+                    <img
+                        alt={data.symbol}
+                        height={26}
+                        src="https://avatars.githubusercontent.com/u/74999480?v=4"
+                        width={26}
+                    />
+                </a>
             </TickerIcon>
             <TickerSymbol symbol={data.symbol} />
             <TickerPrice price={data.price} />

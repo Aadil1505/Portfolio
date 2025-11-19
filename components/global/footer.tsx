@@ -4,27 +4,27 @@ import TickerDisplay from './ticker'
 const links = [
     {
         title: 'Home',
-        href: '#hero',
+        href: '/#hero',
     },
     {
         title: 'About',
-        href: '#about',
+        href: '/#about',
     },
     {
         title: 'Projects',
-        href: '#projects',
+        href: '/#projects',
     },
     {
         title: 'Experience',
-        href: '#experience',
+        href: '/#experience',
     },
     {
         title: 'Contributions',
-        href: '#contributions',
+        href: '/#contributions',
     },
     {
         title: 'Contact',
-        href: '#contact',
+        href: '/#contact',
     },
 ]
 
