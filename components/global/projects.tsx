@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { ChevronRight, Instagram, Zap } from 'lucide-react'
+import { ChevronRight, Zap } from 'lucide-react'
 import Link from 'next/link'
 import * as React from 'react'
 import { WordRotate } from '../ui/word-rotate'

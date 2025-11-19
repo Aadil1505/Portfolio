@@ -2,7 +2,6 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { DynamicIcon, type IconName } from 'lucide-react/dynamic'
-import Link from 'next/link'
 
 type AboutItem = {
     id: string

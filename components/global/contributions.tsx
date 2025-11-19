@@ -12,7 +12,6 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Github } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ShineBorder } from "../ui/shine-border";
 
