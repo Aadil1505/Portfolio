@@ -49,7 +49,7 @@ const ChaseMark = (props: HTMLAttributes<SVGElement>) => (
 
 export const ChaseCard = () => {
     return (
-        <CreditCard className="mx-auto">
+        <CreditCard className="mx-auto drop-shadow-2xl">
             <CreditCardFlipper>
                 <CreditCardFront className="bg-[#063573]">
                     <ChaseLogo className="absolute top-0 left-0 h-1/12" />

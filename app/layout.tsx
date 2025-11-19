@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 const kodeMono = Kode_Mono({
   variable: "--font-kode-mono",
-  // subsets: ["latin"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -32,8 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={`${kodeMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${kodeMono.variable} antialiased`}
+        // className={`${kodeMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
