@@ -59,16 +59,9 @@ export default function ThankYou() {
                   ))}
                 </div>
               </div>
-
-              <div className="pt-4">
-                <p className="text-muted-foreground text-sm">
-                  Whether you have a question, want to collaborate on a project, 
-                  or just want to say hi, I'll try my best to get back to you!
-                </p>
-              </div>
             </div>
 
-            {/* Right side - iPhone component */}
+            {/* Right side - iPad component */}
             <div className="flex justify-center lg:justify-end">
               <div className="transition-all duration-300 hover:scale-105">
                 <Ipad
