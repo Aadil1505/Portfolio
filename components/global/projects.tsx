@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { ChevronRight, Instagram } from 'lucide-react'
+import { ChevronRight, Instagram, Zap } from 'lucide-react'
 import Link from 'next/link'
 import * as React from 'react'
 import { WordRotate } from '../ui/word-rotate'
@@ -8,50 +8,51 @@ import { WordRotate } from '../ui/word-rotate'
 const projectsData = [
     {
         id: 1,
-        title: "Google Gemini",
-        description: "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-        icon: <Instagram />,
-        iconType: "component" as const,
-        link: "https://github.com/meschacirung/cnblocks"
+        title: "Authlink",
+        description: "Blockchain & NFC based product authentication system.",
+        icon: "https://i.imgur.com/JSYiIWq.png",
+        link: "/projects/authlink"
     },
     {
         id: 2,
-        title: "Replit",
-        description: "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-        icon: "/images/replit-logo.png",
-        iconType: "image" as const,
+        title: "SaaStrike",
+        description: "An automated SaaS idea generator using Reddit and OpenAI.",
+        icon: <Zap/>,
         link: "https://github.com/meschacirung/cnblocks"
     },
     {
         id: 3,
-        title: "Magic UI",
-        description: "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-        icon: <Instagram />,
-        iconType: "component" as const,
+        title: "CS Technician",
+        description: "Working as a CS Technician building and developing systems infrastructure.",
+        icon: "https://cs.hofstra.edu/docs/images/shield_lockup_cs.png",
         link: "https://github.com/meschacirung/cnblocks"
     },
     {
         id: 4,
-        title: "VSCodium",
-        description: "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-        icon: "/images/vscodium-logo.png",
-        iconType: "image" as const,
+        title: "Software Developer",
+        description: "Building MakerSpace employee and student management systems.",
+        icon: "https://i.imgur.com/f3PM6J7.png",
         link: "https://github.com/meschacirung/cnblocks"
     },
     {
         id: 5,
-        title: "MediaWiki",
-        description: "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
-        icon: <Instagram />,
-        iconType: "component" as const,
+        title: "Disko",
+        description: "Building smart and scalable media and streaming software.",
+        icon: "https://disko.tv/wp-content/uploads/2023/03/diskologo.png",
         link: "https://github.com/meschacirung/cnblocks"
     },
     {
         id: 6,
-        title: "Google PaLM",
-        description: "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+        title: "Ripe Shopping",
+        description: "Optimized Grocery Platform using OCR for automated cart creation.",
         icon: "https://aadil-alli.vercel.app/ripe/logo.png",
-        iconType: "image" as const,
+        link: "https://github.com/meschacirung/cnblocks"
+    },
+    {
+        id: 7,
+        title: "Abu Zayn",
+        description: "Custom website for restaurant marketing and advertisement.",
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGFlUMG5XOcSTSpUz5lcdmbZUvWjOAqnsWw&s",
         link: "https://github.com/meschacirung/cnblocks"
     }
 ]
@@ -67,7 +68,7 @@ export default function Projects() {
                             className="text-3xl font-semibold md:text-4xl"
                             words={["Work", "Projects", "Side Quests"]}
                         />
-                        <p className="text-muted-foreground mt-6">Connect seamlessly with popular platforms and services to enhance your workflow.</p>
+                        <p className="text-muted-foreground mt-6">Some of the stuff I spend my free time on and get paid to do.</p>
                     </div>
 
                     <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -77,7 +78,6 @@ export default function Projects() {
                                 title={project.title}
                                 description={project.description}
                                 icon={project.icon}
-                                iconType={project.iconType}
                                 link={project.link}
                             />
                         ))}
@@ -92,22 +92,20 @@ const IntegrationCard = ({
     title, 
     description, 
     icon, 
-    iconType, 
     link = 'https://github.com/meschacirung/cnblocks' 
 }: { 
     title: string; 
     description: string; 
     icon: React.ReactNode | string; 
-    iconType: 'component' | 'image';
     link?: string 
 }) => {
     return (
         <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50">
             <div className="relative">
                 <div className="size-10">
-                    {iconType === 'image' ? (
+                    {typeof icon === 'string' ? (
                         <img 
-                            src={icon as string} 
+                            src={icon} 
                             alt={title}
                             width={40}
                             height={40}

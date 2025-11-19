@@ -1,4 +1,6 @@
 import About from "@/components/global/about";
+import Contributions from "@/components/global/contributions";
+import Experience from "@/components/global/experience";
 import Projects from "@/components/global/projects";
 import HeroSection from "@/components/hero-section";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -11,6 +13,8 @@ export default function Home() {
       </BlurFade>
       <About />
       <Projects />
+      <Experience />
+      <Contributions/>
     </div>
   );
 }
