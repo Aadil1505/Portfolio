@@ -59,7 +59,7 @@ const projectsData = [
 
 export default function Projects() {
     return (
-        <section>
+        <section id="projects">
             <div className="py-32">
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="text-center flex-col items-center justify-center">

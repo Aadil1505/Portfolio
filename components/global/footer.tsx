@@ -3,6 +3,14 @@ import TickerDisplay from './ticker'
 
 const links = [
     {
+        title: 'Home',
+        href: '#hero',
+    },
+    {
+        title: 'About',
+        href: '#about',
+    },
+    {
         title: 'Projects',
         href: '#projects',
     },
@@ -17,10 +25,6 @@ const links = [
     {
         title: 'Contact',
         href: '#contact',
-    },
-    {
-        title: 'About',
-        href: '#about',
     },
 ]
 

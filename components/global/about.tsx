@@ -34,19 +34,14 @@ export default function AboutMeSection() {
     ]
 
     return (
-        <section className="py-20">
+        <section id="about" className="py-20">
             <div className="mx-auto max-w-5xl px-4 md:px-6">
                 <div className="flex flex-col gap-10 md:flex-row md:gap-16">
                     <div className="md:w-1/3">
                         <div className="sticky top-20">
                             <h2 className="mt-4 text-3xl font-bold">About Me</h2>
                             <p className="text-muted-foreground mt-4">
-                                Learn more about my journey into programming and what I'm working on today.{' '}
-                                <Link
-                                    href="#contact"
-                                    className="text-primary font-medium hover:underline">
-                                    Get in touch
-                                </Link>
+                                HOW I got into programming and what I'm working on today.{' '}
                             </p>
                         </div>
                     </div>

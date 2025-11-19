@@ -60,7 +60,7 @@ export default function Contributions() {
   }, []);
 
   return (
-    <section>
+    <section id="contributions">
       <div className="py-32">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">

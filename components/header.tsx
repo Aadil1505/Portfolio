@@ -6,10 +6,11 @@ import React from 'react'
 import { AnimatedThemeToggler } from './ui/animated-theme-toggler'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Home', href: '#hero' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Contributions', href: '#contributions' },
 ]
 
 export const HeroHeader = () => {

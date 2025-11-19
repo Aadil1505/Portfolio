@@ -44,7 +44,7 @@ const experienceData: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section>
+    <section id="experience">
       <div className="py-32">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">
