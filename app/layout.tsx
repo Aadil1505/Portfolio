@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourwebsite.com", // Replace with your actual URL
+    url: "https://aadil-alli.vercel.app/", // Replace with your actual URL
     siteName: "Aadil's Portfolio",
     title: "Aadil's Portfolio",
     description: "A portfolio site explaining my projects and passion.",
