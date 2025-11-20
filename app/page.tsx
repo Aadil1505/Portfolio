@@ -9,7 +9,7 @@ import { BlurFade } from "@/components/ui/blur-fade";
 
 export default function Home() {
   return (
-    <BackgroundImageTexture variant="groovepaper" opacity={.08}>
+    <BackgroundImageTexture variant="groovepaper" opacity={.1}>
       <div className="min-h-screen ">
         <BlurFade duration={.5}>
           <HeroSection />

@@ -14,6 +14,7 @@ import { Github } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ShineBorder } from "../ui/shine-border";
+import { NumberTicker } from "../ui/number-ticker";
 
 interface ContributionDay {
   date: string;
@@ -127,9 +128,14 @@ export default function Contributions() {
           <div className="text-center">
             <h2 className="text-3xl font-semibold md:text-4xl">GitHub Contributions</h2>
             <p className="text-muted-foreground mt-6">
-              {loading 
-                ? "Fetching my latest activity from GitHub" 
-                : `${data?.total || 0} contributions in the last year`}
+              {loading ? (
+                "Fetching my latest activity from GitHub"
+              ) : (
+                <span className="inline-flex items-center gap-2 text-center">
+                  <NumberTicker value={data?.total || 0} className="text-muted-foreground" />
+                  <span>contributions in the last year</span>
+                </span>
+              )}
             </p>
           </div>
 
