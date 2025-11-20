@@ -1,9 +1,10 @@
+import FooterSection from "@/components/global/footer";
+import { HeroHeader } from "@/components/header";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Kode_Mono } from "next/font/google";
 import "./globals.css";
-import { HeroHeader } from "@/components/header";
-import { ThemeProvider } from "@/components/ui/theme-provider";
-import FooterSection from "@/components/global/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,6 +96,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollProgress />
           <HeroHeader />
           {children}
           <FooterSection/>
