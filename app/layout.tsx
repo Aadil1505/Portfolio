@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aadil's Portfolio",
     description: "A portfolio site explaining my projects and passion.",
-    creator: "@yourhandle", // Replace with your Twitter handle
+    creator: "@Aadil17810095", // Replace with your Twitter handle
     images: ["https://i.imgur.com/sfAgStq.png"], // Replace with your image
   },
   
