@@ -1,6 +1,5 @@
 import FooterSection from "@/components/global/footer";
 import { HeroHeader } from "@/components/header";
-import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Kode_Mono } from "next/font/google";
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
   keywords: ["portfolio", "web developer", "projects", "Aadil"], // Add relevant keywords
   authors: [{ name: "Aadil Alli" }],
   creator: "Aadil Alli",
-  
+
   // Open Graph metadata (for Facebook, LinkedIn, etc.)
   openGraph: {
     type: "website",
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  
+
   // Twitter Card metadata
   twitter: {
     card: "summary_large_image",
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
     creator: "@Aadil17810095", // Replace with your Twitter handle
     images: ["https://i.imgur.com/sfAgStq.png"], // Replace with your image
   },
-  
+
   // Additional metadata
   robots: {
     index: true,
@@ -70,12 +69,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  
+
   // Icons
   icons: {
     icon: "/favicon.ico",
   },
-  
+
   // Category
   category: "portfolio",
 };
@@ -96,10 +95,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ScrollProgress />
+          {/* <ScrollProgress /> */}
+
           <HeroHeader />
           {children}
-          <FooterSection/>
+          <FooterSection />
         </ThemeProvider>
       </body>
     </html>
